@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash Games with Ruffle</title>
+    <!-- Include Ruffle from the Ruffle CDN -->
+    <script src="https://cdn.ruffle.rs/ruffle.js"></script>
+</head>
+<body>
+    <!-- Create a div to embed your Flash game -->
+    <div id="flash-game-container"></div>
+
+    <!-- Include your Flash game SWF file -->
+    <script>
+        // Load your Flash game using Ruffle
+        RufflePlayer.create(
+            document.querySelector("#flash-game-container"),
+            "path-to-your-game.swf"
+        );
+    </script>
+</body>
+</html>
